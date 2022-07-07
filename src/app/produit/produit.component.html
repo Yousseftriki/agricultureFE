@@ -1,1 +1,25 @@
-<p>produit works!</p>
+<h2>Books List</h2>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>id </th>
+            <th>designation</th>
+            <th>prix</th>
+            <th>qte</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor ="let produit of produitsData">
+            <td>{{produit.productid}}</td>
+            <td>{{produit.designation}}</td>
+            <td>{{produit.prix}}</td>
+            <td>{{produit.qte}}</td>
+            <td>
+                <button  class ="btn btn-info">update </button>
+            </td>
+            <td>
+                <button  class ="btn btn-danger">delete </button>
+            </td>
+        </tr>
+    </tbody>
+</table>
